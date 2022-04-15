@@ -1,0 +1,2531 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/15/2022 10:25:39 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="KCSLAP5281"
+  DTS:CreatorName="KCSITGLOBAL\Malay.Dhruv"
+  DTS:DTSID="{72BCA4CC-9DBE-4B36-8CC3-1500407CC9AA}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="14"
+  DTS:VersionGUID="{5755C328-936C-410B-87D1-0B2CE41F8D6B}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.AdventureWorks2014.malay]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DEFF42D6-E3C6-4854-97CD-DC44BCB8D176}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.AdventureWorks2014.malay">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=AdventureWorks2014;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAWwfJMktJZfaOFeTX3OjrQGrOeefztIpQuDrL98qcGEgAAAAAOgAAAAAIAACAAAABe6xCqHQjWV/lM6/HmWnuyEBVCarTIzMQDFr5qgcf/IRAAAACqnqPaQnQIUschtxl4ttcJQAAAAPNLU2s6TuYJUP4Bh3S3SfPnQHfCill9rM1IQ+0Jz3L65NiiPWJO4WLhjsjOyHW/tsMJjqMZ8URN4HoFgMc69eQ</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.AdventureWorks2014.malay 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{158F6C4A-FEDA-41BB-BDF9-91DA01897B1B}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.AdventureWorks2014.malay 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=AdventureWorks2014;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAD9gBdI2igcz1+VFlvStNRuQcy6UgtPsB1ensBPFVS7sAAAAAAOgAAAAAIAACAAAAC63bFS+9OF8Qc4oKnOYMiHjb+02pkA2k0xbmfY/UzpExAAAABz66wB96ZgAeOaZDwy8Ma9QAAAAOAY5pHmJEASvP90YRaYWE8II3uZ9TvLPA27IbE/1qjuPzT8bNfbjX9L3MpBPnRjLW1BgpuueSGWuthnQyrBjZE</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{248B11D7-6641-430C-9E72-BAE67409E2FC}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.Md.malay">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=Md;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADvEe3HbqxW+9Vj11BOWta4gZ9wRlJlFscbAsXw2Spt2AAAAAAOgAAAAAIAACAAAADXSZChz8okWg3JZUytvvgvx5M/zpcFbFBc9p4R2DVeKxAAAADEHZy+sfooBnLqL6Q9I8BwQAAAAO5HqdXk9fiwi9hkuqO9jHAvSqsFZL15U79ksRjuyThQLZDnxJZ0PKGhRNOEdm0JYHLzP5/MUC0VnJ/jUYeJs9Q</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BC95006E-369A-4507-8048-15ECCCA544FF}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.Md.malay 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=Md;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAB2/sBJlvgcMGmNZXpW4gpMkZ+wmiRz1qvh8Vjq+fj7ZQAAAAAOgAAAAAIAACAAAAC+DWiBhYz2eBGOB9eRRyU2mwMT1YQuzYC8br2Cap1exRAAAAC2nxX1YY92yfznXSEoxmy+QAAAAM0koG+e9N7/re1PG7O+ufj3uYvzJgTkAi8sdJds7sitJl6peDPxE+y9QJa2ssPIfvRBF0CfahueSiCMydIFmT4</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 2]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{8E11E40C-794D-4A8F-A26E-60B2881411E7}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.Md.malay 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=Md;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACJU8x3pDHlFQL4k+295C9WfzY/6m1UnjrOgvqhq6ECKQAAAAAOgAAAAAIAACAAAADVf5knsvYHuptnxs2olftiT5+5osfrwDLJlS+IXlbPaxAAAAAKLmi/f6FxjtT3HQclsEarQAAAABVcMJHLScZ2ttNHgyC6Y2F4l9gVPn2s81sxoaKyuYoA49/OQ4jCgA/LYlkRDFHzCe8r6pebThOq6rF7+aci0mA</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 3]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{64EB9FEC-3082-43FB-B7C0-7A33670F5F81}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.Md.malay 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=Md;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACTU7kTzcmMtTgnq9S094MyflOickH9VAWBwghrmARAIAAAAAAOgAAAAAIAACAAAACvLkw1lCw0DTwY6vR2kQlARsDsOH1JNoxIr+/QiMQQhxAAAABQNiV73j7DttiULHntEiulQAAAABYNSZb8ddtDgDSc0enIU7Y2spHZSs7nBqD8DMiqyJm75yRz7cgB5CFcl8WDGmceeKaPKqGOXwePVoskA2VrgOw</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{C4A698D6-833F-421D-A4AA-0962504F8B61}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2011.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{3594CD68-D798-46BB-97E7-10A285E01D68}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{0E0583DB-23FD-4161-9805-6119C2D0F1F5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity 2011"
+              DTS:DTSID="{49205BAA-2003-4C06-8354-20F77D1B5089}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" 710"
+              DTS:DTSID="{D7D2ABA9-D075-445F-8F26-4F27634F96C8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName=" 66"
+              DTS:DTSID="{AE09FFDF-77D0-4699-9F02-16060ECD248B}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 1]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{04B45078-724A-4EC7-8C61-600256680229}"
+      DTS:ObjectName="Flat File Connection Manager 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2012.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{FAAF0E9D-ECA0-402E-8D44-6DDBA9FC9CCD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{F16A3C49-43E8-4EF7-9BBE-FED854A1BAC8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity"
+              DTS:DTSID="{CC2622EA-0E77-4AF4-B563-7D25441421F6}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 2]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{07C09826-E51C-4E0B-8C48-3E82CA0F16E3}"
+      DTS:ObjectName="Flat File Connection Manager 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2013.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{97E87285-42E3-499C-8F04-98DE45509F67}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{2AB7DF18-21CD-4EA4-9B4E-431BF0C3592D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity "
+              DTS:DTSID="{314E373D-6589-4A21-8C2D-11CF94BA9FF0}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 3]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{82C8774C-DCB7-4281-8639-C19908D982D3}"
+      DTS:ObjectName="Flat File Connection Manager 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2014.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{D25AF5AF-2997-4488-815C-150F233A8BAA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{47F72AF3-B3B1-4EEF-88EE-BFED1D977D77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity"
+              DTS:DTSID="{296DD75B-6DB8-4DDC-B3AC-4C1C20263ED8}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{EA73EA53-763D-421D-9C1E-F61906EA2F9B}"
+      DTS:ObjectName="Flat File Connection Manager 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2011.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{594FBB86-5877-499C-8425-8A1A94D68745}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{B2848194-BAEE-4BC1-AB19-781084F9F653}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity"
+              DTS:DTSID="{80D914A0-96D0-42DD-A093-5B531C7EBD65}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{49AFEC5D-FA3A-4877-AD52-5EDFF3AB884F}"
+      DTS:ObjectName="Flat File Connection Manager 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2012.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{F83EDBF0-C7AA-4E64-A852-9DC95199672C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{A21B2A38-F76F-4E23-8E9B-C5D927DFF69C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity"
+              DTS:DTSID="{9EA19853-01C3-4F5D-A93F-8A746CE14BD9}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F454E820-821C-4181-8D61-721FA978B0A3}"
+      DTS:ObjectName="Flat File Connection Manager 6">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2013.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{0E5E4BA6-68A9-4CB4-85EE-5CEF4BA59E53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{539FD096-19A1-48E1-A921-18A34E039826}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity"
+              DTS:DTSID="{DE314574-4305-4491-998A-19C333CB61EB}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager 7]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6FD422C4-2D29-44F2-A42A-FBFBD3BB50B4}"
+      DTS:ObjectName="Flat File Connection Manager 7">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\SSIS-EXAM\Malay_20068_SSIS\P_2014.txt">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="productyear"
+              DTS:DTSID="{B82517E8-D15F-4DCB-9059-472D400FCC0B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductId"
+              DTS:DTSID="{28FC7267-CD92-4026-80B3-04CAEF4781C7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TotalQuantity"
+              DTS:DTSID="{F2F8745D-CD61-4EE4-8C56-B2E1F400142A}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{5190687F-6C24-4E99-AFE0-6CD688ED0011}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\DFT"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{38F430CF-5ACD-45C3-B447-D06B9B991CA4}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DFT"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Sequence Container\DFT\Conditional Split"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="Conditional Split"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split.Outputs[2011]"
+                      description="Output 1 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2011"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2011</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2011</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split.Outputs[2012]"
+                      description="Output 2 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2012"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2012</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2012</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">1</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split.Outputs[2013]"
+                      description="Output 3 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2013"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2013</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2013</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">2</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split.Outputs[2014]"
+                      description="Output 4 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2014"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2014</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2014</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">3</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split.Outputs[Conditional Split Default Output]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="Conditional Split Default Output"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\Conditional Split.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\Conditional Split 1"
+                  componentClassID="Microsoft.ConditionalSplit"
+                  contactInfo="Conditional Split;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Routes data rows to different outputs depending on the content of the data. Use conditions (SSIS expressions) to specify which rows are routed. For example, separate records that need to be cleaned from those that are ready to be loaded or route only a subset of records."
+                  name="Conditional Split 1"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]"
+                      description="Input to the Conditional Split Transformation"
+                      name="Conditional Split Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                      </inputColumns>
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2011]"
+                      description="Output 1 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2011"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2011</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2011</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">0</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2012]"
+                      description="Output 2 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2012"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2012</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2012</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">1</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2013]"
+                      description="Output 3 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2013"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2013</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2013</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">2</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2014]"
+                      description="Output 4 of the Conditional Split Transformation"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      exclusionGroup="1"
+                      name="2014"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the expression. This expression version uses lineage identifiers instead of column names."
+                          name="Expression">#{Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]} == 2014</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Specifies the friendly version of the expression. This expression version uses column names."
+                          expressionType="Notify"
+                          name="FriendlyExpression">productyear == 2014</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the position of the condition in the list of conditions that the transformation evaluates. The evaluation order is from the lowest to the highest value."
+                          name="EvaluationOrder">3</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[Conditional Split Default Output]"
+                      description="Default Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      name="Conditional Split Default Output"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          name="IsDefaultOut">true</property>
+                      </properties>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[Conditional Split Error Output]"
+                      description="Error Output of the Conditional Split Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Conditional Split Error Output"
+                      synchronousInputId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[Conditional Split Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\Flat File Destination"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="Flat File Destination"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\Flat File Destination.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 4]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\Flat File Destination 1"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="Flat File Destination 1"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\Flat File Destination 1.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 6]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\Flat File Destination 1 1"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="Flat File Destination 1 1"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 7]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 7]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\Flat File Destination 2"
+                  componentClassID="Microsoft.FlatFileDestination"
+                  contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Destination"
+                  localeId="1033"
+                  name="Flat File Destination 2"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether the data will overwrite or append to the destination file."
+                      name="Overwrite">true</property>
+                    <property
+                      dataType="System.Null"
+                      description="Specifies the text to write to the destination file before any data is written."
+                      expressionType="Notify"
+                      name="Header" />
+                    <property
+                      dataType="System.Boolean"
+                      description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                      name="EscapeQualifier">false</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\Flat File Destination 2.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager 5]"
+                      connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager 5]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input]"
+                      hasSideEffects="true"
+                      name="Flat File Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\Multicast"
+                  componentClassID="Microsoft.Multicast"
+                  contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+                  name="Multicast">
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\Multicast.Inputs[Multicast Input 1]"
+                      name="Multicast Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\Multicast.Outputs[Multicast Output 1]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 1"
+                      synchronousInputId="Package\Sequence Container\DFT\Multicast.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Multicast.Outputs[Multicast Output 2]"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 2"
+                      synchronousInputId="Package\Sequence Container\DFT\Multicast.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\Multicast.Outputs[Multicast Output 3]"
+                      dangling="true"
+                      deleteOutputOnPathDetached="true"
+                      name="Multicast Output 3"
+                      synchronousInputId="Package\Sequence Container\DFT\Multicast.Inputs[Multicast Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[pi2011]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay]"
+                      connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\OLE DB Destination 1"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination 1"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[pi2012]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 1.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 1]"
+                      connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 1]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 1.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination 1.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\OLE DB Destination 2"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination 2"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[pi2013]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 2.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 2]"
+                      connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 2]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 2.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination 2.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\OLE DB Destination 3"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination 3"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[pi2014]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 3.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 3]"
+                      connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay 3]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].Columns[productyear]"
+                          cachedDataType="i4"
+                          cachedName="productyear"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].Columns[ProductId]"
+                          cachedDataType="i4"
+                          cachedName="ProductId"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]" />
+                        <inputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].Columns[TotalQuantity]"
+                          cachedDataType="i4"
+                          cachedName="TotalQuantity"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\OLE DB Destination 3.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination 3.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Destination 3.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Destination 3.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Sequence Container\DFT\OLE DB Source"
+                  componentClassID="Microsoft.OLEDBSource"
+                  contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+                  description="OLE DB Source"
+                  name="OLE DB Source"
+                  usesDispositions="true"
+                  version="7">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset"></property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select DATEPART(YYYY,soh.DueDate)as[productyear],sod.ProductId,sum(sod.OrderQTY) as [TotalQuantity]
+FROM Sales.SalesOrderHeader soh
+join 
+Sales.SalesOrderDetail as sod 
+on soh.SalesOrderID=sod.SalesOrderID
+group by sod.ProductID,datepart(YYYY,soh.DueDate)</property>
+                    <property
+                      dataType="System.String"
+                      description="The variable that contains the SQL command to be executed."
+                      name="SqlCommandVariable"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">2</property>
+                    <property
+                      dataType="System.String"
+                      description="The mappings between the parameters in the SQL command and variables."
+                      name="ParameterMapping"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Sequence Container\DFT\OLE DB Source.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[192.168.1.250\SQL2019INT.AdventureWorks2014.malay]"
+                      connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.AdventureWorks2014.malay]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output]"
+                      name="OLE DB Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[productyear]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[productyear]"
+                          name="productyear"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductId]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[ProductId]"
+                          name="ProductId"
+                          truncationRowDisposition="FailComponent" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalQuantity]"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].Columns[TotalQuantity]"
+                          name="TotalQuantity"
+                          truncationRowDisposition="FailComponent" />
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[productyear]"
+                          dataType="i4"
+                          name="productyear" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ProductId]"
+                          dataType="i4"
+                          name="ProductId" />
+                        <externalMetadataColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[TotalQuantity]"
+                          dataType="i4"
+                          name="TotalQuantity" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                      isErrorOut="true"
+                      name="OLE DB Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[productyear]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[productyear]"
+                          name="productyear" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductId]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ProductId]"
+                          name="ProductId" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalQuantity]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[TotalQuantity]"
+                          name="TotalQuantity" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[2011]"
+                  endId="Package\Sequence Container\DFT\Flat File Destination.Inputs[Flat File Destination Input]"
+                  name="2011"
+                  startId="Package\Sequence Container\DFT\Conditional Split.Outputs[2011]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[20111]"
+                  endId="Package\Sequence Container\DFT\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="2011"
+                  startId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2011]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[2012]"
+                  endId="Package\Sequence Container\DFT\Flat File Destination 2.Inputs[Flat File Destination Input]"
+                  name="2012"
+                  startId="Package\Sequence Container\DFT\Conditional Split.Outputs[2012]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[20121]"
+                  endId="Package\Sequence Container\DFT\OLE DB Destination 1.Inputs[OLE DB Destination Input]"
+                  name="2012"
+                  startId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2012]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[2013]"
+                  endId="Package\Sequence Container\DFT\Flat File Destination 1.Inputs[Flat File Destination Input]"
+                  name="2013"
+                  startId="Package\Sequence Container\DFT\Conditional Split.Outputs[2013]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[20131]"
+                  endId="Package\Sequence Container\DFT\OLE DB Destination 2.Inputs[OLE DB Destination Input]"
+                  name="2013"
+                  startId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2013]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[2014]"
+                  endId="Package\Sequence Container\DFT\Flat File Destination 1 1.Inputs[Flat File Destination Input]"
+                  name="2014"
+                  startId="Package\Sequence Container\DFT\Conditional Split.Outputs[2014]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[20141]"
+                  endId="Package\Sequence Container\DFT\OLE DB Destination 3.Inputs[OLE DB Destination Input]"
+                  name="2014"
+                  startId="Package\Sequence Container\DFT\Conditional Split 1.Outputs[2014]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[Multicast Output 1]"
+                  endId="Package\Sequence Container\DFT\Conditional Split.Inputs[Conditional Split Input]"
+                  name="Multicast Output 1"
+                  startId="Package\Sequence Container\DFT\Multicast.Outputs[Multicast Output 1]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[Multicast Output 2]"
+                  endId="Package\Sequence Container\DFT\Conditional Split 1.Inputs[Conditional Split Input]"
+                  name="Multicast Output 2"
+                  startId="Package\Sequence Container\DFT\Multicast.Outputs[Multicast Output 2]" />
+                <path
+                  refId="Package\Sequence Container\DFT.Paths[OLE DB Source Output]"
+                  endId="Package\Sequence Container\DFT\Multicast.Inputs[Multicast Input 1]"
+                  name="OLE DB Source Output"
+                  startId="Package\Sequence Container\DFT\OLE DB Source.Outputs[OLE DB Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container\Execute SQL Task"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{F156DB1A-AEF8-4F18-A2EA-72ECB5BF3ACC}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Execute SQL Task"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{248B11D7-6641-430C-9E72-BAE67409E2FC}"
+              SQLTask:SqlStatementSource="truncate table [pi2011]&#xA;truncate table [pi2012]&#xA;truncate table [pi2013]&#xA;truncate table [pi2014]" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{E946C0A1-FBFD-4E8E-A043-5127D7EEA5EB}"
+          DTS:From="Package\Sequence Container\Execute SQL Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container\DFT" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="98.4,41.6"
+          Id="Package\Sequence Container\DFT"
+          TopLeft="170.133321577973,144.700001818339" />
+        <EdgeLayout
+          Id="Package\Sequence Container.PrecedenceConstraints[Constraint]"
+          TopLeft="114.199997317791,61.366666776869">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="105.133324260182,83.33333504147"
+              Start="0,0"
+              End="105.133324260182,75.83333504147">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.666667520735" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37.666667520735"
+                    Point2="0,41.666667520735"
+                    Point3="4,41.666667520735" />
+                  <mssgle:LineSegment
+                    End="101.133324260182,41.666667520735" />
+                  <mssgle:CubicBezierSegment
+                    Point1="101.133324260182,41.666667520735"
+                    Point2="105.133324260182,41.666667520735"
+                    Point3="105.133324260182,45.666667520735" />
+                  <mssgle:LineSegment
+                    End="105.133324260182,75.83333504147" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="164.8,41.6"
+          Id="Package\Sequence Container\Execute SQL Task"
+          TopLeft="31.7999973177912,19.766666776869" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="338.4,244"
+          Size="338.4,287.2"
+          Id="Package\Sequence Container"
+          TopLeft="342.999991357327,23.2333325205909" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Sequence Container\DFT">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="152,41.6"
+          Id="Package\Sequence Container\DFT\OLE DB Source"
+          TopLeft="1179.1,5.49999999999973" />
+        <NodeLayout
+          Size="153.6,41.6"
+          Id="Package\Sequence Container\DFT\Conditional Split"
+          TopLeft="484.3,208.7" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\DFT\Flat File Destination"
+          TopLeft="244.9,310.3" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\DFT\Flat File Destination 1"
+          TopLeft="475.9,310.3" />
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Sequence Container\DFT\Flat File Destination 2"
+          TopLeft="5.49999999999991,310.3" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Sequence Container\DFT\Flat File Destination 1 1"
+          TopLeft="706.9,310.3" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[2012]"
+          TopLeft="517.42,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-422.32,60"
+              Start="0,0"
+              End="-422.32,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0786026200873" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0786026200873"
+                    Point2="0,18.0786026200873"
+                    Point3="-4,18.0786026200873" />
+                  <mssgle:LineSegment
+                    End="-418.32,18.0786026200873" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-418.32,18.0786026200873"
+                    Point2="-422.32,18.0786026200873"
+                    Point3="-422.32,22.0786026200873" />
+                  <mssgle:LineSegment
+                    End="-422.32,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-222.59365234375,23.0786026200873,22.8673046875,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[2011]"
+          TopLeft="546.54,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-216.44,59.9999999999999"
+              Start="0,0"
+              End="-216.44,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.8584579976985" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.8584579976985"
+                    Point2="0,26.8584579976985"
+                    Point3="-4,26.8584579976985" />
+                  <mssgle:LineSegment
+                    End="-212.44,26.8584579976985" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-212.44,26.8584579976985"
+                    Point2="-216.44,26.8584579976985"
+                    Point3="-216.44,30.8584579976985" />
+                  <mssgle:LineSegment
+                    End="-216.44,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-119.46810546875,31.8584579976985,22.4962109375,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[2013]"
+          TopLeft="575.66,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-14.5599999999999,59.9999999999999"
+              Start="0,0"
+              End="-14.5599999999999,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.8584579976985" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.8584579976985"
+                    Point2="0,26.8584579976985"
+                    Point3="-4,26.8584579976985" />
+                  <mssgle:LineSegment
+                    End="-10.5599999999999,26.8584579976985" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-10.5599999999999,26.8584579976985"
+                    Point2="-14.5599999999999,26.8584579976985"
+                    Point3="-14.5599999999999,30.8584579976985" />
+                  <mssgle:LineSegment
+                    End="-14.5599999999999,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-18.65017578125,31.8584579976985,22.7403515625,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[2014]"
+          TopLeft="604.78,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187.32,59.9999999999999"
+              Start="0,0"
+              End="187.32,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0786026200873" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0786026200873"
+                    Point2="0,18.0786026200873"
+                    Point3="4,18.0786026200873" />
+                  <mssgle:LineSegment
+                    End="183.32,18.0786026200873" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.32,18.0786026200873"
+                    Point2="187.32,18.0786026200873"
+                    Point3="187.32,22.0786026200873" />
+                  <mssgle:LineSegment
+                    End="187.32,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="82.1311328125,23.0786026200873,23.057734375,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Sequence Container\DFT\Multicast"
+          TopLeft="1195.5,107.1" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[OLE DB Source Output]"
+          TopLeft="1255.1,47.0999999999997">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,59.9999999999999"
+              Start="0,0"
+              End="0,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[Multicast Output 1]"
+          TopLeft="1236.56666666667,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-675.466666666667,60"
+              Start="0,0"
+              End="-675.466666666667,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.476821192053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.476821192053"
+                    Point2="0,24.476821192053"
+                    Point3="-4,24.476821192053" />
+                  <mssgle:LineSegment
+                    End="-671.466666666667,24.476821192053" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-671.466666666667,24.476821192053"
+                    Point2="-675.466666666667,24.476821192053"
+                    Point3="-675.466666666667,28.476821192053" />
+                  <mssgle:LineSegment
+                    End="-675.466666666667,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="162.4,41.6"
+          Id="Package\Sequence Container\DFT\Conditional Split 1"
+          TopLeft="1173.9,208.7" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[Multicast Output 2]"
+          TopLeft="1273.63333333333,148.7">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-18.5333333333333,59.9999999999999"
+              Start="0,0"
+              End="-18.5333333333333,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,20.4768211920529" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,20.4768211920529"
+                    Point2="0,24.4768211920529"
+                    Point3="-4,24.4768211920529" />
+                  <mssgle:LineSegment
+                    End="-14.5333333333333,24.4768211920529" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-14.5333333333333,24.4768211920529"
+                    Point2="-18.5333333333333,24.4768211920529"
+                    Point3="-18.5333333333333,28.4768211920529" />
+                  <mssgle:LineSegment
+                    End="-18.5333333333333,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\DFT\OLE DB Destination"
+          TopLeft="937.5,310.3" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\DFT\OLE DB Destination 1"
+          TopLeft="1169.5,310.299999999999" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\DFT\OLE DB Destination 2"
+          TopLeft="1401.5,310.299999999999" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Sequence Container\DFT\OLE DB Destination 3"
+          TopLeft="1633.5,310.299999999999" />
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[20111]"
+          TopLeft="1208.78,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-185.68,60"
+              Start="0,0"
+              End="-185.68,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0289455547898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0289455547898"
+                    Point2="0,18.0289455547898"
+                    Point3="-4,18.0289455547898" />
+                  <mssgle:LineSegment
+                    End="-181.68,18.0289455547898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-181.68,18.0289455547898"
+                    Point2="-185.68,18.0289455547898"
+                    Point3="-185.68,22.0289455547898" />
+                  <mssgle:LineSegment
+                    End="-185.68,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-104.08810546875,23.0289455547898,22.4962109375,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[20121]"
+          TopLeft="1239.66,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="15.4400000000001,59.9999999999999"
+              Start="0,0"
+              End="15.4400000000001,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.8481219379422" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.8481219379422"
+                    Point2="0,26.8481219379422"
+                    Point3="4,26.8481219379422" />
+                  <mssgle:LineSegment
+                    End="11.4400000000001,26.8481219379422" />
+                  <mssgle:CubicBezierSegment
+                    Point1="11.4400000000001,26.8481219379422"
+                    Point2="15.4400000000001,26.8481219379422"
+                    Point3="15.4400000000001,30.8481219379422" />
+                  <mssgle:LineSegment
+                    End="15.4400000000001,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-3.71365234374997,31.8481219379422,22.8673046875,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[20131]"
+          TopLeft="1270.54,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="216.56,59.9999999999999"
+              Start="0,0"
+              End="216.56,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,22.8481219379422" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,22.8481219379422"
+                    Point2="0,26.8481219379422"
+                    Point3="4,26.8481219379422" />
+                  <mssgle:LineSegment
+                    End="212.56,26.8481219379422" />
+                  <mssgle:CubicBezierSegment
+                    Point1="212.56,26.8481219379422"
+                    Point2="216.56,26.8481219379422"
+                    Point3="216.56,30.8481219379422" />
+                  <mssgle:LineSegment
+                    End="216.56,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="96.90982421875,31.8481219379422,22.7403515625,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Sequence Container\DFT.Paths[20141]"
+          TopLeft="1301.42,250.3">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="417.68,59.9999999999999"
+              Start="0,0"
+              End="417.68,52.4999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,14.0289455547898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,14.0289455547898"
+                    Point2="0,18.0289455547898"
+                    Point3="4,18.0289455547898" />
+                  <mssgle:LineSegment
+                    End="413.68,18.0289455547898" />
+                  <mssgle:CubicBezierSegment
+                    Point1="413.68,18.0289455547898"
+                    Point2="417.68,18.0289455547898"
+                    Point3="417.68,22.0289455547898" />
+                  <mssgle:LineSegment
+                    End="417.68,52.4999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="197.3111328125,23.0289455547898,23.057734375,9.5732421875"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DFT\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DFT\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DFT\OLE DB Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DFT\OLE DB Destination 2">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Sequence Container\DFT\OLE DB Destination 3">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

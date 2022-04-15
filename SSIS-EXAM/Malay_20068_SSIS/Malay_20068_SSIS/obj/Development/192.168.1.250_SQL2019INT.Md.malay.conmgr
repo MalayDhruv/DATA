@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="192.168.1.250_SQL2019INT.Md.malay"
+  DTS:DTSID="{030E116D-690E-43DC-97D3-11BAF664591A}"
+  DTS:CreationName="ADO">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=Md;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAACAAAAAAAQZgAAAAEAACAAAABW5EmTj5IEA/lnPpPpizflZZ6IkGgMrLwLj+e9nOdEuwAAAAAOgAAAAAIAACAAAAD5AsJyLACYEh//IktuoYLa5V2Z6orbkPg7/cg8QXSGvoAAAADodppr1AIi9yfuq23P2T5nZI4XC7d/Mop6IsSqB7kIYWmx2kuK3d5atOxcYF7u4h/LZTwrcGPpMkbuyRB/JbrUC9/WXGkGK7i1j4Gxy34Je1IUgBTwAp8kEYvUwjnhBW5C37DeAImfCFeE3iQ5GE0wVpqqvE0O8xADqQG5MwyRoUAAAACFePD0cXeG+NG+ZmP8NhUjx8kJBXfLV4EXMG9/qbuZcWNND2iQIcDdS2+TUKZM8DWhTpITrl7k56Uj+5QepNoy</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

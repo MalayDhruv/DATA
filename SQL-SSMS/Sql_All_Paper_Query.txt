@@ -1,0 +1,91 @@
+--Name : Malay Dhruv
+--E_id : 20068
+--Paper_np : 1
+
+
+use md 
+
+create table student(
+s_id int primary key identity(1,1),
+s_name varchar(100),
+s_subject varchar(100),
+s_mark numeric(3)check(s_mark>0 and s_mark<=100) 
+)
+
+insert into student values('Malay','Science',85),('Meet','Maths',75),('Jay','Science',45),('Dhruv','Maths',65),('Tanu','Science',40),('Abhishek','Maths',65),('Ajay','Science',79),('Vraj','Maths',58),('Anuj','Science',65),('Kinajl','Maths',95)
+
+update student
+set s_mark= 30
+where s_id=5
+
+select * from student
+
+--Q1
+select * from student where s_mark between 50 and 90 and s_subject='Science'
+
+--Q2
+select *,
+case when s_mark >= 90 then 'A' when s_mark < 35  then 'F' else 'B' end NewRank 
+from student
+
+--Q3
+---Dynamic Result---
+declare @subject varchar(10)
+declare @total numeric(3) 
+set @subject = 'English'
+@total = select s_mark from student avg(s_mark) where s_subject = 'English'
+print @total
+
+---Staic Result---
+declare @subject1 varchar(10) ='English'
+declare @total1 varchar(3) = 346
+print @subject1 + ' Total mark is ' + @total1
+
+
+----------------------Paper no 02-----------
+
+--Name : Malay Dhruv
+--E_id : 20068
+--Paper_np : 2
+
+use md
+create table emp2(
+id varchar(5) primary key,
+e_name varchar(10),
+dob date,
+salary numeric(10),
+city varchar(20)
+)
+--(2)--insert into emp2(id,e_name,dob,salary,city) values('E01','Tulsi','1982/01/26',12000,'Ahmedabad')
+insert into emp2 values('E02','Gopi','1983/08/15',15000,'Anand'),('E03','Rajshree','1984/10/3',20000,'Vadodara'),('E04','Vaishali','1985/03/23',25000,'Surat'),('E05','Laxmi','1983/02/14',18000,'Anand')
+insert into emp2(id,e_name,dob,salary,city) values('E06','Shivali','1984/09/05',20000,null)
+
+select * from emp2
+
+--Q1 DONE
+--Q2 DONE
+--Q3
+select id,dob from emp2 group by id,dob having id in('E01','E03')
+
+--Q4
+select * from emp2 where salary between 18000 and 20000
+
+--Q5
+select * from  emp2 where city not in ('Ahmedabad','Surat')
+
+--Q6
+select * from emp2 where city like('%d')
+
+--Q7 Already Done in Table 
+--alter table emp2
+--add constraint salary check(salary>10000)
+
+--Q8
+select * from emp2 where dob between '1982/01/01' and '1983/12/31'
+
+--Q9
+select city,avg(salary) from emp2
+group by city
+
+--Q10
+select * from emp2 where salary>16000

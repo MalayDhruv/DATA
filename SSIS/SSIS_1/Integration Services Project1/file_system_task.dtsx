@@ -1,0 +1,675 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="4/5/2022 2:27:04 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="KCSLAP5281"
+  DTS:CreatorName="KCSITGLOBAL\Malay.Dhruv"
+  DTS:DTSID="{FA9F60FA-B598-4329-BAAD-AB585C0FE2A3}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="15.0.2000.180"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="18"
+  DTS:VersionGUID="{171D10FE-83FB-42ED-9460-344FE4F95F6C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{7C196256-8B5A-406C-8923-D5EA8D5BB5CF}"
+      DTS:ObjectName="192.168.1.250\SQL2019INT.Md.malay">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=192.168.1.250\SQL2019INT;User ID=malay;Initial Catalog=Md;Provider=SQLNCLI11.1;Persist Security Info=True;Auto Translate=False;">
+          <DTS:Password
+            DTS:Name="Password"
+            Sensitive="1"
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAM3/QuQqPLkSlB2A2A6sUQAAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACZUldgKDZDiObAp/WnIdqnq4BN49ThokvHjv1C7Z5uDQAAAAAOgAAAAAIAACAAAAA6/vFQv2Og2lxSFUtg0emnKlVgtl7mcKhvRm+rWrxCkBAAAADwp7fT3XCAaqXgZei+awuzQAAAAN57Nj/IGxeHL5A5LTH+8E1q5gO7pcLWjKCwOq7uxu5xoZq+qdk831CI15Cz91XlvG+DMnTT1mCU5irDUqjGmr8</DTS:Password>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E6067970-2E5B-4129-AC83-0FEB93B3CC75}"
+      DTS:ObjectName="Excel Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\Malay\Student_excel_bkp.xlsx;Extended Properties=&quot;Excel 3.0;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Malay]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{1D892F94-462D-4E27-B932-F2C0F117FEB4}"
+      DTS:ObjectName="Malay">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="1"
+          DTS:ConnectionString="D:\SSIS\Malay" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Malay 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{27E18469-3BD1-471D-BF9A-F55BDDAC256B}"
+      DTS:ObjectName="Malay 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:FileUsageType="3"
+          DTS:ConnectionString="D:\Malay" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Student_excel_bkp.xlsx]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{654EA298-B4FA-4D46-B9E8-7EB9A7B31FC0}"
+      DTS:ObjectName="Student_excel_bkp.xlsx">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\SSIS\SSIS_1\Student_excel_bkp.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Student_excel_bkp.xlsx 1]"
+      DTS:CreationName="FILE"
+      DTS:DTSID="{99CB734B-7200-4985-A187-CFB86AD4B098}"
+      DTS:ObjectName="Student_excel_bkp.xlsx 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="D:\SSIS\SSIS_1\Student_excel_bkp.xlsx" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Dft-excel to sql"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{AE1037D0-8DAB-492D-B918-C083E29238C1}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Dft-excel to sql"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Dft-excel to sql\Excel Source"
+              componentClassID="Microsoft.ExcelSource"
+              contactInfo="Excel Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Excel Source"
+              name="Excel Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">Sheet1$</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mapping from parameters in the SQL command to variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Dft-excel to sql\Excel Source.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output]"
+                  name="Excel Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_id]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_id]"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_id]"
+                      name="s_id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_name]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_name]"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_name]"
+                      name="s_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_subject]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_subject]"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_subject]"
+                      name="s_subject"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_mark]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_mark]"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_mark]"
+                      name="s_mark"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_id" />
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_subject]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_subject" />
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].ExternalColumns[s_mark]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_mark" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output]"
+                  isErrorOut="true"
+                  name="Excel Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_id]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_id]"
+                      name="s_id" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_name]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_name]"
+                      name="s_name" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_subject]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_subject]"
+                      name="s_subject" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_mark]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[s_mark]"
+                      name="s_mark" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Dft-excel to sql\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Student-dest]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Dft-excel to sql\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay]"
+                  connectionManagerRefId="Package.ConnectionManagers[192.168.1.250\SQL2019INT.Md.malay]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[s_id]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="s_id"
+                      externalMetadataColumnId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_id]"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_id]" />
+                    <inputColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[s_name]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="s_name"
+                      externalMetadataColumnId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_name]"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_name]" />
+                    <inputColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[s_subject]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="s_subject"
+                      externalMetadataColumnId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_subject]"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_subject]" />
+                    <inputColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[s_mark]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="s_mark"
+                      externalMetadataColumnId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_mark]"
+                      lineageId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output].Columns[s_mark]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_id]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_id" />
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_name]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_name" />
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_subject]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_subject" />
+                    <externalMetadataColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[s_mark]"
+                      dataType="wstr"
+                      length="255"
+                      name="s_mark" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Dft-excel to sql\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Dft-excel to sql\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Dft-excel to sql\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Dft-excel to sql\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Dft-excel to sql.Paths[Excel Source Output]"
+              endId="Package\Dft-excel to sql\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Excel Source Output"
+              startId="Package\Dft-excel to sql\Excel Source.Outputs[Excel Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Sequence Container - folders creation and deletaion of file from orignal destination"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{D91D4894-AD97-42AB-AB01-2DEF3A02A115}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Sequence Container - folders creation and deletaion of file from orignal destination">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{19765B9B-28B4-42D4-9241-DBEB585ED062}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskSourcePath="{654EA298-B4FA-4D46-B9E8-7EB9A7B31FC0}"
+              TaskDestinationPath="{27E18469-3BD1-471D-BF9A-F55BDDAC256B}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task - Malay"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{6B424AFA-B7F3-48D2-9A49-1FE1B0EB14BC}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task - Malay"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="CreateDirectory"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="{27E18469-3BD1-471D-BF9A-F55BDDAC256B}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task 1"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{56FBF887-BA8C-4AB7-B922-6E7C267DAD2E}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="File System Task 1"
+          DTS:TaskContact="File System Task;Microsoft Corporation; SQL Server 2019; © 2019 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="DeleteFile"
+              TaskSourcePath="{99CB734B-7200-4985-A187-CFB86AD4B098}" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container - folders creation and deletaion of file from orignal destination.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{CD3EE2A2-4541-443B-85D6-82148781A0C8}"
+          DTS:From="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task - Malay"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task" />
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Sequence Container - folders creation and deletaion of file from orignal destination.PrecedenceConstraints[Constraint 1]"
+          DTS:CreationName=""
+          DTS:DTSID="{032CB2DA-68E9-4209-834F-6583F759688A}"
+          DTS:From="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint 1"
+          DTS:To="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task 1" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Dft-excel to sql"
+          TopLeft="750.833303497898,172.466668037309" />
+        <NodeLayout
+          Size="195.2,41.6"
+          Id="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task - Malay"
+          TopLeft="5.5,17.3000007232031" />
+        <EdgeLayout
+          Id="Package\Sequence Container - folders creation and deletaion of file from orignal destination.PrecedenceConstraints[Constraint]"
+          TopLeft="103.483333548572,58.9000007232031">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,157.400001343091"
+              Start="0,0"
+              End="0,149.900001343091">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,149.900001343091" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="158.4,41.6"
+          Id="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task"
+          TopLeft="24.6666670971448,216.300002066294" />
+        <EdgeLayout
+          Id="Package\Sequence Container - folders creation and deletaion of file from orignal destination.PrecedenceConstraints[Constraint 1]"
+          TopLeft="103.866667097145,257.900002066294">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="107.333330419329,137.466667851342"
+              Start="0,0"
+              End="107.333330419329,129.966667851342">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,64.733333925671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,64.733333925671"
+                    Point2="0,68.733333925671"
+                    Point3="4,68.733333925671" />
+                  <mssgle:LineSegment
+                    End="103.333330419329,68.733333925671" />
+                  <mssgle:CubicBezierSegment
+                    Point1="103.333330419329,68.733333925671"
+                    Point2="107.333330419329,68.733333925671"
+                    Point3="107.333330419329,72.733333925671" />
+                  <mssgle:LineSegment
+                    End="107.333330419329,129.966667851342" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Sequence Container - folders creation and deletaion of file from orignal destination\File System Task 1"
+          TopLeft="127.999997516473,395.366669917636" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="299.2,492"
+          Size="480.8,535.2"
+          Id="Package\Sequence Container - folders creation and deletaion of file from orignal destination"
+          TopLeft="66.6666640175715,55.7333345455593" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Dft-excel to sql">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="140,41.6"
+          Id="Package\Dft-excel to sql\Excel Source"
+          TopLeft="177.166659845247,22.8333334710863" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Dft-excel to sql\OLE DB Destination"
+          TopLeft="161.333328333166,200.16666797532" />
+        <EdgeLayout
+          Id="Package\Dft-excel to sql.Paths[Excel Source Output]"
+          TopLeft="247.049994089206,64.4333334710863">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,135.733334504233"
+              Start="0,0"
+              End="0,128.233334504233">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,128.233334504233" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dft-excel to sql\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Dft-excel to sql\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
